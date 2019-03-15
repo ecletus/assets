@@ -1,6 +1,6 @@
 package assets
 
-import "github.com/aghape/plug"
+import "github.com/ecletus/plug"
 
 type dis struct {
 	dis plug.EventDispatcherInterface
