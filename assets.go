@@ -1,15 +1,15 @@
 package assets
 
-import "github.com/moisespsena/go-assetfs/api"
+import "github.com/moisespsena/go-assetfs/assetfsapi"
 
-func TemplateFS(fs api.Interface) api.Interface {
+func TemplateFS(fs assetfsapi.Interface) assetfsapi.Interface {
 	return fs.NameSpace("templates")
 }
 
-func StaticFS(fs api.Interface) api.Interface {
+func StaticFS(fs assetfsapi.Interface) assetfsapi.Interface {
 	return fs.NameSpace("static")
 }
 
-func LocaleFS(fs api.Interface) api.Interface {
+func LocaleFS(fs assetfsapi.Interface) assetfsapi.Interface {
 	return fs.NameSpace("locale")
 }
