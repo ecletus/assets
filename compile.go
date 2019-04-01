@@ -6,7 +6,7 @@ import (
 	"github.com/moisespsena-go/sortvalues"
 	"github.com/moisespsena/go-assetfs"
 	"github.com/moisespsena/go-assetfs/repository/api"
-	"github.com/moisespsena/go-path-helpers"
+	"github.com/moisespsena-go/path-helpers"
 )
 
 var (
