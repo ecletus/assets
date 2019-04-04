@@ -4,8 +4,8 @@ import (
 	"github.com/ecletus/ecletus"
 	"github.com/ecletus/plug"
 	"github.com/moisespsena-go/sortvalues"
-	"github.com/moisespsena/go-assetfs"
-	"github.com/moisespsena/go-assetfs/repository/api"
+	"github.com/moisespsena-go/assetfs"
+	"github.com/moisespsena-go/assetfs/repository/api"
 	"github.com/moisespsena-go/path-helpers"
 )
 

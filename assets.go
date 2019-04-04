@@ -1,6 +1,6 @@
 package assets
 
-import "github.com/moisespsena/go-assetfs/assetfsapi"
+import "github.com/moisespsena-go/assetfs/assetfsapi"
 
 func TemplateFS(fs assetfsapi.Interface) assetfsapi.Interface {
 	return fs.NameSpace("templates")
