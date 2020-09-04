@@ -2,14 +2,25 @@ package assets
 
 import "github.com/moisespsena-go/assetfs/assetfsapi"
 
-func TemplateFS(fs assetfsapi.Interface) assetfsapi.Interface {
-	return fs.NameSpace("templates")
+const (
+	NS_LOCALE    = "@locale"
+	NS_PRIVATE   = "@private"
+	NS_STATIC    = "static"
+	NS_TEMPLATES = "templates"
+)
+
+func LocaleFS(fs assetfsapi.Interface) assetfsapi.Interface {
+	return fs.NameSpace(NS_LOCALE)
+}
+
+func PrivateFS(fs assetfsapi.Interface) assetfsapi.Interface {
+	return fs.NameSpace(NS_PRIVATE)
 }
 
 func StaticFS(fs assetfsapi.Interface) assetfsapi.Interface {
-	return fs.NameSpace("static")
+	return fs.NameSpace(NS_STATIC)
 }
 
-func LocaleFS(fs assetfsapi.Interface) assetfsapi.Interface {
-	return fs.NameSpace("locale")
+func TemplateFS(fs assetfsapi.Interface) assetfsapi.Interface {
+	return fs.NameSpace(NS_TEMPLATES)
 }
